@@ -2,7 +2,7 @@ import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes.js";
 import { createServer } from "http";
 
-import { createRoutes } from "./routes.js";
+
 import { serveStatic } from "./static.js";
 import { setupVite } from "./vite.js";
 
