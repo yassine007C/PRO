@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { insertInquirySchema, inquiries } from './schema';
+import { insertInquirySchema, inquiries } from './schema.js';
 import { schema } from "./schema.js";
 
 
