@@ -4,6 +4,7 @@
   "exclude": ["node_modules", "client", "build", "dist", "**/*.test.ts"],
   "compilerOptions": {
     "noEmit": false,
+    "allowImportingTsExtensions": false,
     "outDir": "dist",
     "module": "NodeNext",
     "moduleResolution": "NodeNext",
