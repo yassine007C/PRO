@@ -1,4 +1,5 @@
-import { db } from "./db";
+import { db } from "./db.js";
+
 import { inquiries, type InsertInquiry, type Inquiry } from "@shared/schema";
 
 export interface IStorage {
