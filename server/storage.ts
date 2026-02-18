@@ -1,6 +1,7 @@
 import { db } from "./db.js";
 
-import { inquiries, type InsertInquiry, type Inquiry } from "@shared/schema";
+
+import { inquiries, type InsertInquiry, type Inquiry } from "../shared/schema.js";
 
 export interface IStorage {
   createInquiry(inquiry: InsertInquiry): Promise<Inquiry>;
