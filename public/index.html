@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🟢 API جاهز!</title>
+  <title>REST Express API</title>
   <style>
-    body { font-family: system-ui; text-align: center; padding: 50px; background: #f0f8ff; }
-    h1 { color: #10b981; }
-    .endpoint { background: white; margin: 20px auto; padding: 20px; border-radius: 10px; max-width: 500px; }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:system-ui;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);min-height:100vh;display:flex;align-items:center;justify-content:center}
+    .card{background:white;padding:40px;border-radius:20px;box-shadow:0 20px 40px rgba(0,0,0,0.1);max-width:500px;text-align:center}
+    h1{color:#333;margin-bottom:20px;font-size:2.5em}
+    .status{display:inline-block;background:#10b981;color:white;padding:10px 20px;border-radius:50px;font-weight:bold;margin:20px 0}
+    .endpoint{background:#f8f9fa;padding:20px;border-radius:10px;margin:20px 0;text-align:right}
+    pre{background:#2d3748;color:#a0aec0;padding:15px;border-radius:8px;text-align:right;font-size:14px}
   </style>
 </head>
 <body>
-  <h1>🎉 الـ API يعمل بنجاح!</h1>
-  
-  <div class="endpoint">
-    <h3>POST /api/inquiries/create</h3>
-    <pre>{
+  <div class="card">
+    <h1>🟢 REST Express API</h1>
+    <div class="status">Production Ready</div>
+    <div class="endpoint">
+      <h3>📝 POST /api/inquiries/create</h3>
+      <pre>{
   "name": "اسمك",
   "email": "email@example.com",
   "subject": "Programming",
   "message": "رسالتك"
 }</pre>
+    </div>
+    <p style="color:#666;margin-top:30px">Powered by Koyeb + PostgreSQL + TypeScript</p>
   </div>
-  
-  <p><strong>الحالة:</strong> 🟢 متصلة بقاعدة البيانات | Koyeb Production</p>
 </body>
 </html>
