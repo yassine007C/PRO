@@ -15,7 +15,7 @@ export function serveStatic(app: Express) {
     console.log(`Serving static files from: ${distPath}`);
     app.use(express.static(distPath));
     
-    app.use("/*", (_req: Request, res: Response) => {
+    app.use("*", (_req: Request, res: Response) => {
       res.sendFile(path.resolve(distPath, "index.html"));
     });
   } else {
