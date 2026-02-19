@@ -9,7 +9,8 @@
     "build": "tsc -p tsconfig.server.json",
     "start": "NODE_ENV=production node dist/server/index.js",
     "check": "tsc -p tsconfig.server.json --noEmit",
-    "db:push": "drizzle-kit push"
+    "db:push": "drizzle-kit push",
+    "heroku-postbuild": "npm run build && cd client && npm install && npm run build && cd .. && rm -rf public/* && cp -r client/dist/* public/ || true"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
